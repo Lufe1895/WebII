@@ -1,0 +1,19 @@
+extends ../layout
+
+block content
+    div(class="container")
+        br
+        br
+        header(class="major special")
+            h2 Lista por Escuela
+            p
+                Para Se muestra una lista de los estudiantes con su escuela de egreso
+
+        table
+            thead
+                th Nombre
+                th Apellido Paterno
+                th Apellido Materno
+                th Escuela de Egreso
+
+            tbody(id="tablaEsc")

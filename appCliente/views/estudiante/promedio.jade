@@ -1,0 +1,23 @@
+extends ../layout
+
+block content
+    div(class="container")
+        br
+        br
+        header(class="major special")
+            h2 Lista por Promedio
+            p
+                Para Se muestra una lista de los estudiantes con su promedio
+
+        table
+            thead
+                th Nombre
+                th Apellido Paterno
+                th Apellido Materno
+                th Promedio
+
+            tbody(id="tablaProm")
+        center
+            input(type="button", class="button special big", value="Borrar Los Alumnos Con Promedio Menor a 7", id="borrarMenor")
+            br
+            br

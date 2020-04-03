@@ -1,0 +1,127 @@
+extends ../layout
+
+block content
+    div(id="formulario")
+        div(class="container")
+            br
+            br
+            header(class="major special")
+                h2 Formulario
+            form(action="")
+                h3  Datos Personales
+                div( class="row uniform 50%")    
+                    div(class="6u 12u$(xsmall)")
+                        label Nombre(s):
+                            input(type="text", placeholder="Nombre(s)", id="nombre")
+
+                    div(class="3u 12u$(xsmall)")
+                        label Apellido Paterno:
+                            input(type="text", placeholder="Apellido Paterno", id="ap_paterno")
+
+                    div(class="3u$ 12u$(xsmall)")
+                        label Apellido Materno:
+                            input(type="text", placeholder="Apellido Materno", id="ap_materno")
+                        
+                    div(class="3u 12u$(xsmall)")
+                        label Sexo:
+                            select(id="sexo")
+                                option(value="F") Femenino
+                                option(value="M") Masculino
+
+                    div(class="6u 12u$(xsmall)")
+                        label CURP:
+                            input(type="text", placeholder="CURP", id="curp")
+                        
+                    div(class="3u$ 12u$(xsmall)")
+                        label Fecha de Nacimiento: 
+                            input(type="text", placeholder="dd/mm/aaaa", id="fecha_nacimiento")
+                        
+                    div(class="4u 12u$(xsmall)")
+                        label Estado:
+                            select(id="estatus")
+                                option(value="0") Inactivo
+                                option(value="1") Activo
+                        
+                    div(class="4u 12u$(xsmall)")
+                        label Estado Civil:
+                            select(id="id_civ")
+                                option(value="1") Soltero
+                                option(value="9") Casado
+                                option(value="10") Viudo
+                                option(value="11") Divorciado
+                                option(value="12") Separado
+                                option(value="13") Unión Libre
+                                option(value="14") Conviviente Civil
+
+                    div(class="4u$ 12u$(xsmall)")
+                        label Escuela de Procedencia:
+                            select(id="id_aca")
+
+                    div(class="12u$ 12u$(xsmall)")
+                        label Tutor
+                            select(id="id_per")
+                br
+                br
+                br
+                h3 Datos Médicos
+                div( class="row uniform 50%")
+                    div(class="6u 12u$(xsmall)")
+                        label Tipo de Sangre: &nbsp;
+                            input(type="text", id="tipo_sangre")
+
+                    div(class="6u$ 12u$(xsmall)")
+                        label Número del Seguro Social: &nbsp;
+                            input(type="text", placeholder="XXX-XX-XXXX", id="nss")
+
+                    div(class="12u$ 12u$(xsmall)")
+                        label Alergias: &nbsp;
+                            input(type="text", placeholder="(Opcional)", id="alergias")
+
+                br
+                br
+                br
+                h3 Datos de Contacto
+                div(class="row uniform 50%")
+
+                    div(class="6u 12u$(xsmall)")            
+                        label Dirección: &nbsp;
+                            input(type="text", placeholder="Calle", id="calle")
+
+                    div(class="2u 12u$(xsmall)")
+                        label Número: &nbsp;
+                            input(type="text", placeholder="Número Exterior", id="numero")
+
+                    div(class="2u 12u$(xsmall)")
+                        label Municipio: &nbsp;
+                            input(type="text", placeholder="Municipio", id="municipio")
+
+                    div(class="2u$ 12u$(xsmall)")
+                        label Colonia: &nbsp;
+                            input(type="text", placeholder="Colonia", id="colonia")
+
+                    div(class="4u 12u$(xsmall)")
+                        label Estado: &nbsp;
+                            input(type="text", placeholder="Estado", id="estado")
+
+                    div(class="4u 12u$(xsmall)")
+                        label País: &nbsp;
+                            input(type="text", placeholder="País", id="pais")
+
+                    div(class="4u$ 12u$(xsmall)")
+                        label Código Postal: &nbsp;
+                            input(type="text", placeholder="CP", id="cp")
+
+                    div(class="4u 12u$(xsmall)")
+                        label Correo Electrónico: &nbsp;
+                            input(type="text", placeholder="ejemplo@example.com", id="email")
+
+                    div(class="4u 12u$(xsmall)")
+                        label Teléfono de Casa: &nbsp;
+                            input(type="text", placeholder="XXX-XXX-XXXX", id="tel")
+
+                    div(class="4u$ 12u$(xsmall)")
+                        label Teléfono Celular: &nbsp;
+                            input(type="text", placeholder="XXX-XXX-XXXX", id="celular")
+
+                br
+                input(type="submit", value="Guardar", class="special button big", id="btnNuevo")

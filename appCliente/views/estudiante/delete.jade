@@ -1,0 +1,32 @@
+extends ../layout
+
+block content
+    div(class="container")
+        br
+        br
+        header(class="major special")
+            h2 Eliminar Estudiante
+            p Para eliminar un estudiante, rellene los campos con sus respectivos datos y haga click sobre el botón "Eliminar".
+        div(class="row uniform 50%")
+            div(class="3u 12u$(xsmall)")
+                input(type="text", placeholder="Nombre", id="deleteNombre")
+            
+            div(class="3u 12u$(xsmall)")
+                input(type="text", placeholder="Apellido Paterno", id="deletePaterno")
+            
+            div(class="3u 12u$(xsmall)")
+                input(type="text", placeholder="Apellido Materno", id="deleteMaterno")
+            
+            div(class="3u$ 12u$(xsmall)")
+                button(id="btnDelete", class="button special") Eliminar
+        br
+        br
+        br
+        div(id="lista")
+            table(border="1")
+                thead
+                    th Nombre
+                    th Apellido Paterno
+                    th Apellido Materno
+                
+                tbody(id="listaEstudiantes")

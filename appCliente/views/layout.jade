@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/templates/assets/css/main.css')
+    script(src="./javascripts/jquery.js")
+    script(src="./javascripts/funciones.js")
+    script(src="./templates/assets/js/jquery.min.js")
+    script(src="./templates/assets/js/skel.min.js")
+    script(src="./templates/assets/js/util.js")
+    script(src="./templates/assets/js/main.js")
+
+  body
+    header(id="header" class="skel-layers-fixed")
+      h1 Estudiantes
+      a(href="#nav") Menú
+      
+    nav(id="nav", class)
+      ul(class="links")
+        li
+          a(href="/list", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Ver Estudiantes
+
+        li
+          a(href="/listarMuni", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Ver Municipios
+
+        li
+          a(href="/listarProm", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Ver Promedios
+
+        li
+          a(href="/listarEsc", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Ver Escuelas
+
+        li
+          a(href="/form", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Registrar Estudiante
+
+        li
+          a(href="/find", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Buscar Estudiante
+
+        li
+          a(href="/delete", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Eliminar Estudiante
+
+        li
+          a(href="/edit", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);") Actualizar Datos
+
+      a(href="#", class="close", style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);")
+    block content
+        

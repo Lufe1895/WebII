@@ -1,0 +1,18 @@
+extends ../layout
+
+block content
+    div(class="container")
+        br
+        br
+        header(class="major special")
+            h2 Alumnos Activos
+            p Se muestran únicamente los alumnos que se encuentran en un estado activo.
+        div(class="table-wrapper")
+            div(id="lista")
+                table
+                    thead
+                        th Nombre
+                        th Apellido Paterno
+                        th Apellido Materno
+                    
+                    tbody(id="listaEstudiantes")

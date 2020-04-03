@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+    div(class="container", id="opcionesAlumnos")
+        br
+        br
+        header(class="major special")
+            h2 Editar Alumno
+            p Seleccione el alumno que desea editar de la lista, y edite los campos.
+        
+        div( class="row uniform 50%")
+            div(class="12u$ 12u$(xsmall)")  
+                select(id="selectAlumno")
+        br
+        br
+        form
+            div( class="row uniform 50%")
+                div(class="6u 12u$(xsmall)")  
+                    label Dirección: &nbsp;
+                        input(type="text", id="calle")
+                div(class="2u 12u$(xsmall)")  
+                    label Número: &nbsp;
+                        input(type="text", id="numero")
+                div(class="4u$ 12u$(xsmall)")  
+                    label Municipio: &nbsp;
+                        input(type="text", id="municipio")
+
+                div(class="3u 12u$(xsmall)")        
+                    label Colonia: &nbsp;
+                        input(type="text", id="colonia")
+                div(class="3u 12u$(xsmall)") 
+                    label Estado: &nbsp;
+                        input(type="text", id="estado")
+                
+                
+                div(class="3u 12u$(xsmall)") 
+                    label País: &nbsp;
+                        input(type="text", id="pais")
+                div(class="3u$ 12u$(xsmall)") 
+                    label Código Postal: &nbsp;
+                        input(type="text", id="cp")
+                div(class="3u$ 12u$(xsmall)")        
+                    input(type="submit", value="Guardar", class="button special big", id="btnEditar")

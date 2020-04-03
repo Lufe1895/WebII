@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+    div(class="container")
+        br
+        br
+        header(class="major special")
+            h2 Buscar Estudiante
+            p
+                Para buscar un estudiante, ingrese el nombre en el campo y haga click sobre el botón "Buscar"
+        br
+        div( class="row uniform 50%")
+            div(class="8u 12u$(xsmall)")
+                input(type="text", name="datoBuscar", placeholder="Dato a buscar", id="datoBuscar")
+            
+            div(class="4u$ 12u$(xsmall)")
+                button(id="buscar", class="button special") Buscar
+        br
+        br
+        div(class="table-wrapper")
+            table
+                thead
+                    th Nombre
+                    th Apellido Paterno
+                    th Apellido Materno
+                    th Promedio
+                    th Escuela de Procedencia
+                    th Fecha de Egreso
+                    th Curp
+                    
+                tbody(id="tabla")
+
+
+    script(src="/javascripts/jquery.js")
+    script(src="/javascripts/funciones.js")
